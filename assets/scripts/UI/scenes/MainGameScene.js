@@ -27,6 +27,9 @@ cc.Class({
         
         puzzleBoard_Medium: cc.Prefab,
         
+        puzzleBoard_Large: cc.Prefab,
+        
+        puzzleBoard_Huge: cc.Prefab,
         
         anchorHintBoard: {
             default: null,

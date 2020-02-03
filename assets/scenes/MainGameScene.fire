@@ -91,6 +91,9 @@
     "_components": [
       {
         "__id__": 24
+      },
+      {
+        "__id__": 25
       }
     ],
     "_prefab": null,
@@ -1243,5 +1246,61 @@
     "_fitWidth": false,
     "_fitHeight": true,
     "_id": "15u84QAlRJBraoo74xH4Xt"
+  },
+  {
+    "__type__": "fb65b5vMB5M1L73bAhO8CMU",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "hintBoard_2_5": {
+      "__uuid__": "45ea5f1f-4977-489d-a961-7cb69bb0def7"
+    },
+    "hintBoard_2_7": {
+      "__uuid__": "2df61032-318d-434a-b42d-4979e17f359c"
+    },
+    "hintBoard_4_5": {
+      "__uuid__": "975db256-2356-492f-acaf-1d47689f57cd"
+    },
+    "hintBoard_4_7": {
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
+    },
+    "puzzleBoard_Tiny": {
+      "__uuid__": "2bc9f00e-d5f7-46f1-89d2-e88f85e7480f"
+    },
+    "puzzleBoard_Small": {
+      "__uuid__": "ec495209-56e8-4761-a574-ef50004985db"
+    },
+    "puzzleBoard_Medium": {
+      "__uuid__": "828dd820-9c16-458d-bc6e-eee795af8a11"
+    },
+    "puzzleBoard_Large": {
+      "__uuid__": "0b976f33-ccb9-4cfb-8e95-ac11f1c38a32"
+    },
+    "puzzleBoard_Huge": {
+      "__uuid__": "5fd81df3-7024-4b2a-adf3-f105378d7181"
+    },
+    "anchorHintBoard": {
+      "__id__": 7
+    },
+    "anchorPuzzleBoard": {
+      "__id__": 8
+    },
+    "hintBoard": null,
+    "puzzleBoard": null,
+    "btnBack": {
+      "__id__": 18
+    },
+    "btnRestart": {
+      "__id__": 13
+    },
+    "btnFinish": {
+      "__id__": 23
+    },
+    "stageId": 0,
+    "stageDefinition": null,
+    "_id": "94LtHoJWZI6547E2JeCAeN"
   }
 ]
