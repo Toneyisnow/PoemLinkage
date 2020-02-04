@@ -47,9 +47,13 @@
     ],
     "_active": true,
     "_level": 1,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 21
+      }
+    ],
     "_prefab": {
-      "__id__": 21
+      "__id__": 22
     },
     "_opacity": 255,
     "_color": {
@@ -193,7 +197,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "32QBNCzTBNA521NKwB9iPB",
     "sync": false
@@ -260,7 +264,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "d6mKI8KDJEH4k0lpkn27gR",
     "sync": false
@@ -327,7 +331,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "a0myhGALFPLaCBw9zvkLyM",
     "sync": false
@@ -394,7 +398,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "d8JHndGNpMqLgH5Sbx/wsR",
     "sync": false
@@ -461,7 +465,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "c8Ecabq9pMBauZzs9a9jLq",
     "sync": false
@@ -528,7 +532,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "4f5rnfittPz5glSQQHYogF",
     "sync": false
@@ -595,7 +599,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "4elptCz5pJeJPokb2RE1Dd",
     "sync": false
@@ -662,7 +666,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "daHSHhRCpOOL+ry0pyhI2W",
     "sync": false
@@ -729,10 +733,31 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "cedV3qQu1ACqejZXM9I+F5",
     "sync": false
+  },
+  {
+    "__type__": "fedd10aL1RMWKwhPv72WWVl",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "boardWidth": 7,
+    "boardHeight": 4,
+    "poemId": 0,
+    "poemDefinition": null,
+    "puzzleDefinition": null,
+    "stageDefinition": null,
+    "characterAnchors": [],
+    "poemBoardPrefab": {
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
+    },
+    "hintBoard": null,
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -740,7 +765,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "fc5ca505-0923-476b-8e59-9c75bce89276"
     },
     "fileId": "98dv8o9BdAqK8lFKDouFBs",
     "sync": false

@@ -23,9 +23,13 @@
     ],
     "_active": true,
     "_level": 1,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 5
+      }
+    ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 6
     },
     "_opacity": 255,
     "_color": {
@@ -173,6 +177,27 @@
     },
     "fileId": "32QBNCzTBNA521NKwB9iPB",
     "sync": false
+  },
+  {
+    "__type__": "fedd10aL1RMWKwhPv72WWVl",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "boardWidth": 7,
+    "boardHeight": 2,
+    "poemId": 0,
+    "poemDefinition": null,
+    "puzzleDefinition": null,
+    "stageDefinition": null,
+    "characterAnchors": [],
+    "poemBoardPrefab": {
+      "__uuid__": "2df61032-318d-434a-b42d-4979e17f359c"
+    },
+    "hintBoard": null,
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",
