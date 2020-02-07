@@ -150,7 +150,7 @@ cc.Class({
                         //var posY = 226 - jj * 64;
                         
                         node.position = self.convertToPixelPosition(chara.position);
-                        node.scale = 0.5;
+                        node.scale = 1;
                         // node.tag = cc.v2(ii, jj);
                         // node.on(cc.Node.EventType.TOUCH_END, this.onBoardClickedAt, this);
                         
@@ -438,10 +438,11 @@ cc.Class({
         return line;
     },
 
+    // Note: the position in the poem is starting from 1
     convertToPixelPosition: function(position) {
     
-        var pixelX = this.anchorStartPoint.x + position.x * this.anchorInterval;
-        var pixelY = this.anchorStartPoint.y - position.y * this.anchorInterval;
+        var pixelX = this.anchorStartPoint.x + (position.x - 1) * this.anchorInterval;
+        var pixelY = this.anchorStartPoint.y - (position.y - 1) * this.anchorInterval;
         
         return cc.v2(pixelX, pixelY);
     },

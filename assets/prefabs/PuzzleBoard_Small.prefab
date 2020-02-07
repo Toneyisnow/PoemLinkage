@@ -57,8 +57,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.45,
+      "y": 0.45,
       "z": 1
     },
     "_eulerAngles": {
@@ -193,10 +193,10 @@
     "stageDefinition": null,
     "anchorStartPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": -320,
+      "y": 448
     },
-    "anchorInterval": 64,
+    "anchorInterval": 128,
     "puzzleBoardPrefab": {
       "__uuid__": "ec495209-56e8-4761-a574-ef50004985db"
     },

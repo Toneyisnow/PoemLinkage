@@ -41,15 +41,18 @@ cc.Class({
             type: cc.StageDefinition
         },
         
-        characterAnchors: {
-            default: [],
-            type: cc.Node
+        anchorStartPoint: {
+            default: cc.v2(0, 0),
+            type: cc.v2
         },
         
-        poemBoardPrefab: cc.Prefab,
+        anchorInterval: 64,
+        
+        hintBoardPrefab: cc.Prefab,
         
         hintBoard: cc.HintBoard,
         
+
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -101,8 +104,8 @@ cc.Class({
         let lineCount = this.poemDefinition.lineCount;
         let columnCount = this.poemDefinition.columnCount;
         this.hintBoard = new cc.HintBoard();
-        
-        
+        let isLean = (lineCount > 2);
+
         //cc.loader.loadRes("characters/chars_fzlb", cc.SpriteAtlas, function (err, atlas) {
             
         //    var frame = atlas.getSpriteFrame('c_7eb7');
@@ -130,16 +133,29 @@ cc.Class({
                 character.position = cc.v2(i, j);
                 cc.GlobalStorage.loadCharacterSpriteFrame(characterId, character, function(characterSpriteFrame, chara) {
         
-                    var node = new cc.Node();
-                    let charSprite = node.addComponent(cc.Sprite);
+                    if (chara == undefined) {
+                        console.log('loadCharacterSpriteFrame: character load failed.');
+                        return;
+                    }
+
+                    var nod = new cc.Node();
+                    let charSprite = nod.addComponent(cc.Sprite);
                     charSprite.spriteFrame = characterSpriteFrame;
                     
                     var charIndex = chara.position.x * columnCount + chara.position.y;
-                    var anchor = self.characterAnchors[charIndex];
-                    console.log('anchor position:', anchor.position.x, anchor.position.y);
                     
-                    anchor.addChild(node, 1, self.getCharacterTag(charIndex));
-                    node.position = cc.v2(0, 0);
+                    //// var anchor = self.characterAnchors[charIndex];
+                    
+                    var anchor = new cc.Node();
+                    var posX = self.anchorStartPoint.x + i * self.anchorInterval;
+                    var posY = self.anchorStartPoint.y - j * self.anchorInterval;
+                    if (isLean) {
+                        posX += j * self.anchorInterval;
+                    }
+                    console.log('anchor position:', posX, posY);
+                    
+                    anchor.setPosition(posX, posY);
+                    anchor.addChild(nod, 1, self.getCharacterTag(charIndex));
                     
                     console.log('checking uncovered for charIndex: ', charIndex);
                     if (self.puzzleDefinition.isUncoveredChar(charIndex)) {
